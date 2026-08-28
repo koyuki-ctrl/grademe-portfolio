@@ -7,6 +7,4 @@ def common_letters(left: str, right: str) -> str:
             if not l in repeat:
                 repeat.append(l) 
                 result.append(l)
-            else:
-                continue
     return "".join(result)
