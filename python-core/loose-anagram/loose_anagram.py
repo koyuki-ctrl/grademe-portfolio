@@ -1,5 +1,4 @@
 def loose_anagram(left: str, right: str) -> bool:
-    # Remove spaces, ignore case, keep everything else
-    l = "".join(ch for ch in left.lower() if not ch.isspace())
-    r = "".join(ch for ch in right.lower() if not ch.isspace())
-    return sorted(l) == sorted(r)
+    lf = "".join(c for c in left.lower() if not c.isspace())
+    rg = "".join(c for c in right.lower() if not c.isspace())
+    return sorted(lf) == sorted(rg)
