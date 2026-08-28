@@ -5,9 +5,6 @@ def convert_base_digits(number: str, source_base: int, target_base: int) -> str:
     if source_base < 2 or source_base > 36 or target_base < 2 or target_base > 36:
         return "invalid"
 
-    if not number or number[0] == '-':
-        return "invalid" 
-
     try:
         decimal_value = int (number, source_base)
     except:
