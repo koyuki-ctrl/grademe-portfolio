@@ -1,3 +1,3 @@
 def is_alpha_palindrome(text: str) -> bool:
-    clean_text = "".join([txt.lower() for txt in text if txt.isalpha()])
-    return clean_text[::-1] == clean_text if clean_text else False
+    word = "".join([x.lower() for x in text if x.isalpha()])
+    return word == word[::-1] if word else False 
