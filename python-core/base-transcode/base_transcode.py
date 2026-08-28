@@ -2,7 +2,7 @@ def convert_base_digits(number: str, source_base: int, target_base: int) -> str:
     base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     char_list = []
 
-    if source_base < 2 or source_base > 36 or target_base < 2 or target_base > 36:
+    if source_base < 2 or target_base < 2:
         return "invalid"
 
     try:
